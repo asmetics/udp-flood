@@ -11,6 +11,7 @@ Using this tool is really simple.
  - Example: python main.py IP PORT -s 1500
 4. Format with your desired information.
  - Example: python main.py 23.143.152.86 53 -s 1500 -r 0
+ - Use this site for checking out the strength: https://dstat.cc/
 
 Run the command, and boom, there you go.
 
