@@ -1,8 +1,8 @@
 import socket
-import random
 import time
 import argparse
 import psutil
+import os
 
 def get_max_packet_size(interface_name):
     net_if_addrs = psutil.net_if_stats()
@@ -48,7 +48,7 @@ if packet_size > max_packet_size:
     print(f"Warning: Packet size {packet_size} exceeds MTU {max_packet_size}. This may cause fragmentation.")
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-packet_data = random._urandom(packet_size)
+packet_data = os.urandom(packet_size)
 
 start_time = time.time()
 packet_count = 0
