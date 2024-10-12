@@ -1,7 +1,7 @@
 import socket
 import psutil
 
-hideLocalIP = False ## enable it if you want, incase ur screensharing or something, theres no significant risk to showing a private ip. 
+hideLocalIP = False ## enable it if you want, incase ur screensharing or something, theres no significant risk to showing a private ip though. 
 
 ## determining the interface
 def get_interface_used_by_socket(remote_host="8.8.8.8", remote_port=80):
@@ -20,8 +20,6 @@ def get_interface_used_by_socket(remote_host="8.8.8.8", remote_port=80):
         sock.close()
         
 ## using the said interface to see the max size you can send with it
-
-
 def get_max_packet_size(interface_name):
     net_if_addrs = psutil.net_if_stats()
     
@@ -40,7 +38,6 @@ else:
     print(f"Interface {interface} not found")
     
 ## finally outputting the command
-
 print(f"Socket is using interface: {interface} with IP: {"HIDDEN" if hideLocalIP else local_ip}")
 
 print("---------------------------")
