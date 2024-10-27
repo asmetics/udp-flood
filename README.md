@@ -1,7 +1,7 @@
 
-# Generic Python DDos
+# Generic Python Dos
 
-This tool will send mass amounts of UDP packets, it warns you about fragmentation, and is easy to use. 
+This tool will send mass amounts of UDP packets, it warns you about fragmentation, and is easy to use. Do not use maliciously, not that you really could with a 1 device setup.
 
 ## How to Use
 Using this tool is really simple.
