@@ -29,5 +29,5 @@ Download the project, wherever you want, then run this in a terminal.
     
 ## Authors
 
-- [@nuqko](https://www.github.com/nuqko)
+- [@asmetics](https://www.github.com/nuqko)
 
